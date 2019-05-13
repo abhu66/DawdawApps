@@ -40,10 +40,8 @@ class VendorUI : AnkoComponent<ViewGroup> {
 
                 cardView {
                     lparams(width = matchParent, height = dip(60))
-                    backgroundColor = R.color.colorPrimary
-                    foreground.apply {
-                         selectableItemBackground
-                    }
+                    backgroundColor = ContextCompat.getColor(context,R.color.colorPrimary)
+
                     textView {
                         id = R.id.name_vendor
                         textSize = 16f
