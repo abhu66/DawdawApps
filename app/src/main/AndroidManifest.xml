@@ -18,6 +18,7 @@
         <activity android:name=".DashboardActivity"/>
         <activity android:name=".BarangMasukActivity"/>
         <activity android:name=".VendorActivity"/>
+        <activity android:name=".BarangActivity"/>
     </application>
 
 </manifest>

@@ -27,11 +27,10 @@ class DashboardActivity : AppCompatActivity() {
         )
 
         val menuIntAdapter = RecyclerAdapter(applicationContext,listMenu){
-            if(it.name == "Barang Masuk") {
-                startActivity<BarangMasukActivity>()
-            }
-            else {
-                Toast.makeText(applicationContext,it.name,Toast.LENGTH_LONG).show()
+            when {
+                it.name == "Barang Masuk" -> startActivity<BarangMasukActivity>()
+                it.name == "Data Barang" -> startActivity<BarangActivity>()
+                else -> Toast.makeText(applicationContext,it.name,Toast.LENGTH_LONG).show()
             }
 
         }
