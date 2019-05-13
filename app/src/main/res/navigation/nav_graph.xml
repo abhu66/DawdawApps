@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/nav_graph"
+            app:startDestination="@id/mainActivity2">
+            <activity android:id="@+id/mainActivity2"
+                      android:name="azis.dawdawapps.MainActivity"
+                      android:label="login_layout"
+                      tools:layout="@layout/login_layout"/>
+    <activity android:id="@+id/dashboardActivity2"
+              android:name="azis.dawdawapps.DashboardActivity"
+              android:label="DashboardActivity"/>
+    <activity android:id="@+id/barangMasukActivity" android:name="azis.dawdawapps.BarangMasukActivity"
+              android:label="BarangMasukActivity"/>
+    <activity android:id="@+id/vendorActivity" android:name="azis.dawdawapps.VendorActivity"
+              android:label="VendorActivity"/>
+</navigation>
